@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function interest()
+{
+ var a=document.getElementById("i1").value;
+ var b=document.getElementById("i2").value;
+ var c=document.getElementById("i3").value;
+  
+ var interest=a*(b/100)*c;
+ var FinalAmount=a*(Math.pow(1+b/100),c);
+document.getElementById("d1").innerHTML=interest;
+document.getElementById("d2").innerHTML=FinalAmount;
+document.getElementById("t1").style.display="block";
+}
+
+</script>
+</head>
+<body
+<p>Enterthe Principal<input type="text" id="i1"/></p>
+<p>Enter rate(percentage value)<input type="text" id="i2"/></p>
+<p>Enter numbers of years<input type="text" id="i3"/></p>
+<input type="button" onclick="interest()" value="calculate">
+<br/>
+<br/>
+<table id="t1" border="2 px solid" style="display:none">
+<tr>
+<td>Interest</td>
+<td>FinalAmount</td>
+
+</tr>
+<tr>
+<td id="d1">
+</td>
+<td id="d2">
+</td>
+</tr>
+</table>
+</body>
+</html>

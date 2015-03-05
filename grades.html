@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+function calculator()
+{
+
+var s=document.getElementById("A1").value;
+
+if(s>=90)
+{
+document.getElementById("A2").innerHTML="Letter Grade for numeric grade is A";
+}
+else if(s>=80)
+{
+document.getElementById("A2").innerHTML="Letter Grade for numeric grade is B";
+}
+else if(s>=70)
+{
+document.getElementById("A2").innerHTML="Letter Grade for numeric grade is c";
+}
+else
+{
+document.getElementById("A2").innerHTML="NONE";
+}
+
+}
+</script>
+</head>
+<body>
+<p> Enter Numeric Grade </p>
+<label id="A2" ></label>
+<input id ="A1" type="text"/>
+<p>
+<input type="Submit" type = "Submit" value="OK" onclick="calculator()"/> 
+<input type= "Reset" value="Cancel"/> </p>
+</body>
+</html>
